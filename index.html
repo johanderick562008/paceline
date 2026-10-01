@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171614" />
+    <meta
+      name="description"
+      content="PACELINE — race-day gear, trail-tested essentials and everyday running kit, curated by runners in Glasgow."
+    />
+    <meta property="og:title" content="PACELINE — Running & Sportswear" />
+    <meta
+      property="og:description"
+      content="Race-day gear, trail-tested essentials and everyday running kit — curated by runners, worn on every terrain."
+    />
+    <meta property="og:type" content="website" />
+    <script>
+      // Preload the Home hero (LCP image) only on the home route, before the app bundle loads.
+      if (location.pathname === '/') {
+        var l = document.createElement('link')
+        l.rel = 'preload'
+        l.as = 'image'
+        l.type = 'image/webp'
+        l.setAttribute('imagesrcset', '/images/hero-800.webp 800w, /images/hero-1440.webp 1440w')
+        l.setAttribute('imagesizes', '100vw')
+        l.setAttribute('fetchpriority', 'high')
+        document.head.appendChild(l)
+      }
+    </script>
+    <title>PACELINE — Running & Sportswear</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
