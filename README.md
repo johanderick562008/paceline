@@ -4,7 +4,7 @@ A responsive, accessible frontend for **PACELINE**, an independent running shop 
 apparel and accessories. Built as a Web Development Club recruitment assignment: recreate the supplied **Home** and
 **About** page designs as closely as possible and make every visible interaction work.
 
-> **Live URL:** _not deployed yet_ — see [Deployment](#deployment).
+> **Live URL:** https://paceline-delta.vercel.app/
 
 ---
 
