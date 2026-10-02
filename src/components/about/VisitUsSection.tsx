@@ -1,7 +1,5 @@
-import { ExternalLink } from 'lucide-react'
 import map from '../../assets/About/visit_us_section/map.webp'
 import { site } from '../../config/site'
-import { buttonClass } from '../ui/Button'
 
 /**
  * About.png shows "Visit us in" with the city left blank; the city comes from
@@ -9,7 +7,6 @@ import { buttonClass } from '../ui/Button'
  * opening hours were supplied, so none are shown — edit `site.store` to add them.
  */
 export function VisitUsSection() {
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.store.mapsQuery)}`
   return (
     <section id="visit" aria-labelledby="visit-title" className="on-dark grid scroll-mt-20 bg-ink text-white md:grid-cols-2">
       <div className="flex items-center px-5 py-16 sm:px-8 md:px-12 lg:px-24">
@@ -23,11 +20,6 @@ export function VisitUsSection() {
           <p className="mt-6 max-w-sm text-base leading-[1.6] text-white/80">
             Find us on {site.store.street}. Pop in for a fitting, a free gait analysis or a chat about your next race.
           </p>
-          <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className={buttonClass('outline-light', 'mt-8')}>
-            Get directions
-            <ExternalLink aria-hidden className="size-4" />
-            <span className="sr-only">(opens Google Maps in a new tab)</span>
-          </a>
         </div>
       </div>
       <div className="relative">

@@ -16,7 +16,6 @@ export const site = {
     city: 'Glasgow',
     /** Only the street named in the design is used — no full postal address was supplied. */
     street: 'Great Western Road',
-    mapsQuery: 'Great Western Road, Glasgow',
   },
   stats: [
     { value: '10+', label: 'Years in sport' },
